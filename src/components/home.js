@@ -8,8 +8,8 @@ return(
     <div>
         <h2>Phone List</h2>
     </div>
- <table align="center">
-    <tbody>
+ <table align="center" class="table">
+    <thead class="Categories">
     <tr>
     <td>Vendor</td>
     <td>Model</td>
@@ -17,6 +17,9 @@ return(
     <td>Storage</td>
     <td>Price</td>
     </tr>
+    </thead>
+    
+    <tbody>
     <tr>
     <td>Samsung</td>
     <td>F54 5G</td>

@@ -4,17 +4,32 @@ function Header(){
 return (
 <div>
 <title>Phone Information System</title>
-<body>
+
 <ul>
-    <li><a href = "#">Home</a></li>
-    <li><a href = "#">Enter Record</a></li>
-    <li><a href = "#">Update Record</a></li>  
+    <MenuItem name="Home" />
+    <Task1 task1="Enter Record"/>
+    <Task2 task2="Update Record"/>
 </ul>
 
-</body>
+
 </div>
 
 )
+}
+
+function MenuItem(props)
+{
+    return <li><a href = "#">{props.name}</a></li>
+}
+
+function Task1(props)
+{
+   return <li><a href = "#">{props.task1}</a></li>
+}
+
+function Task2(props)
+{
+    return <li><a href = "#">{props.task2}</a></li>
 }
 
 export default Header;
